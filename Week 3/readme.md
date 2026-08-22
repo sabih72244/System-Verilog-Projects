@@ -1,49 +1,49 @@
 # SystemVerilog Verification Tasks
 
-## Overview
+## Tasks
 
-This repository contains two SystemVerilog verification tasks developed as part of the INSPIRE IC Design / SystemVerilog Verification Lab.
+### Task 1: Constrained-Random Testing for ALU
 
-### Tasks
+**Generate constrained-random test vectors for an ALU.**
 
-1. Generate constrained-random test vectors for an ALU.
-2. Add coverage to an APB bus transaction testbench and analyze untested scenarios.
+This task implements an 8-bit ALU and verifies its functionality using constrained-random test vectors. The ALU supports:
 
-The testbenches are developed and simulated using **Xilinx Vivado 2018.2 XSim**.
+- Addition
+- Subtraction
+- AND
+- OR
+- XOR
+
+The testbench uses SystemVerilog classes, randomization, constraints, a reference model, and self-checking mechanisms to verify the ALU output.
 
 ---
 
-## Task 1 – Constrained-Random Test Vectors for ALU
+### Task 2: APB Bus Transaction Coverage
 
-### Objective
+**Add coverage groups to an APB bus transaction testbench. Generate a coverage report and analyze untested scenarios.**
 
-To verify an 8-bit ALU using constrained-random test vectors and a self-checking testbench.
+This task implements an APB slave and a SystemVerilog testbench to generate constrained-random APB read and write transactions.
 
-### ALU Operations
+The verification includes:
 
-| Opcode | Operation |
-|--------|-----------|
-| `000` | ADD |
-| `001` | SUB |
-| `010` | AND |
-| `011` | OR |
-| `100` | XOR |
+- Read and Write transaction testing
+- Address range coverage
+- Data coverage
+- APB Setup and Access phase analysis
+- PREADY and PSLVERR analysis
+- Read/Write and Address cross coverage
+- Coverage report generation
+- Untested scenario analysis
 
-### Features
+> **Note:** Vivado 2018.2 XSim does not support SystemVerilog `covergroup`. Therefore, manual coverage counters are used to collect and analyze coverage scenarios.
 
-- 8-bit ALU
-- Constrained-random input generation
-- Random operation selection
-- SystemVerilog class and constraints
-- Reference model
-- Automatic result checking
-- Operand coverage analysis
-- Opcode coverage analysis
-- Carry/Borrow analysis
-- Untested scenario detection
+---
 
-### Files
+## Files
 
 ```text
-alu.sv
-alu_tb.sv
+├── alu.sv
+├── alu_tb.sv
+├── apb_slave.sv
+├── apb_tb.sv
+└── README.md
