@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="alu_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="alu_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="9766667fs"></ZoomStartTime>
+      <ZoomEndTime time="159166668fs"></ZoomEndTime>
+      <Cursor1Time time="30000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="86"></NameColumnWidth>
+      <ValueColumnWidth column_width="83"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="22" />
+   <wvobject fp_name="/alu_tb/A" type="array">
+      <obj_property name="ElementShortName">A[7:0]</obj_property>
+      <obj_property name="ObjectShortName">A[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/B" type="array">
+      <obj_property name="ElementShortName">B[7:0]</obj_property>
+      <obj_property name="ObjectShortName">B[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/opcode" type="array">
+      <obj_property name="ElementShortName">opcode[2:0]</obj_property>
+      <obj_property name="ObjectShortName">opcode[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/Y" type="array">
+      <obj_property name="ElementShortName">Y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Y[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/carry" type="logic">
+      <obj_property name="ElementShortName">carry</obj_property>
+      <obj_property name="ObjectShortName">carry</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/expected_Y" type="array">
+      <obj_property name="ElementShortName">expected_Y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_Y[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/expected_carry" type="logic">
+      <obj_property name="ElementShortName">expected_carry</obj_property>
+      <obj_property name="ObjectShortName">expected_carry</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/op_count" type="array">
+      <obj_property name="ElementShortName">op_count[0:4][31:0]</obj_property>
+      <obj_property name="ObjectShortName">op_count[0:4][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/A_zero_count" type="array">
+      <obj_property name="ElementShortName">A_zero_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A_zero_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/A_low_count" type="array">
+      <obj_property name="ElementShortName">A_low_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A_low_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/A_mid_count" type="array">
+      <obj_property name="ElementShortName">A_mid_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A_mid_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/A_high_count" type="array">
+      <obj_property name="ElementShortName">A_high_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A_high_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/A_max_count" type="array">
+      <obj_property name="ElementShortName">A_max_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A_max_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/B_zero_count" type="array">
+      <obj_property name="ElementShortName">B_zero_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B_zero_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/B_low_count" type="array">
+      <obj_property name="ElementShortName">B_low_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B_low_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/B_mid_count" type="array">
+      <obj_property name="ElementShortName">B_mid_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B_mid_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/B_high_count" type="array">
+      <obj_property name="ElementShortName">B_high_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B_high_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/B_max_count" type="array">
+      <obj_property name="ElementShortName">B_max_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B_max_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/zero_result_count" type="array">
+      <obj_property name="ElementShortName">zero_result_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">zero_result_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/nonzero_result_count" type="array">
+      <obj_property name="ElementShortName">nonzero_result_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">nonzero_result_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/carry_count" type="array">
+      <obj_property name="ElementShortName">carry_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">carry_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/alu_tb/no_carry_count" type="array">
+      <obj_property name="ElementShortName">no_carry_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">no_carry_count[31:0]</obj_property>
+   </wvobject>
+</wave_config>
